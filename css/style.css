@@ -25,6 +25,7 @@ body {
   max-width: 120rem;
   width: 90%;
   margin: 0 auto;
+  width: min(90%, 120rem); /*nueva forma de css3 de abreviar linea 25 y 26*/
 }
 a {
   text-decoration: none;
@@ -80,6 +81,9 @@ img {
 }
 
 /*Barra*/
+.barra {
+  padding-top: 4rem;
+}
 @media (min-width:768px) {
   .barra {
     display: flex;
@@ -148,6 +152,9 @@ img {
 .boton--secundario {
   background-color: var(--primario);
 }
+.boton:hover {
+  cursor: pointer;
+}
 
 /*Cursos*/
 .cursos {
@@ -169,4 +176,11 @@ img {
 .widget-curso:last-of-type {
   border: none;
   margin-bottom: none;
+}
+
+/*Footer*/
+.footer {
+  background-color: var(--negro);
+  padding-bottom: 3rem;
+  margin-top: 4rem;
 }
