@@ -164,12 +164,14 @@ img {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 2rem;
 }
-.widget-curso__label{
+.widget-curso__label,
+.curso__label {
   font-family: var(--fuenteHeading);
   font-weight: 700;
   font-size: 2rem;
 }
-.widget-curso__info {
+.widget-curso__info,
+.curso__info {
   font-weight: 400;
   font-size: 2rem;
 }
@@ -200,4 +202,20 @@ img {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
   }
+}
+
+/*Cursos*/
+.curso {
+  padding: 3rem 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+@media (min-width:768px) {
+  .curso {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+  }
+}
+.curso:last-of-type {
+  border: none;
 }
